@@ -1,6 +1,6 @@
 # AI 视频导演：一个人加几个 AI，便宜高效做出一条好看的短片
 
-这是一个 Claude Code 技能，加上四只真做过的片子的账。把整个仓库克隆进 Claude Code 的技能目录（`git clone <本仓库地址> ~/.claude/skills/ai-video-director`；只拷 `SKILL.md` 不行，它要引用 `references/` 和 `cases/`），然后对 Claude 说一句“把精卫填海做成一条 60 秒的横屏片”，它就会当导演，带你从原文和事实一路走到剪好、核过、封存的成片；每一只花了多少积分、在哪一镜翻的车，记在 `cases/` 里。
+这是一个 Claude Code 技能，加上四只真做过的片子的账。把整个仓库克隆进 Claude Code 的技能目录（`git clone https://github.com/waiting761/ai-video-director.git ~/.claude/skills/ai-video-director`；只拷 `SKILL.md` 不行，它要引用 `references/` 和 `cases/`），然后对 Claude 说一句“把精卫填海做成一条 60 秒的横屏片”，它就会当导演，带你从原文和事实一路走到剪好、核过、封存的成片；每一只花了多少积分、在哪一镜翻的车，记在 `cases/` 里。
 
 分工是这样的：Claude Opus 当导演，自己定讲什么、多长、怎么拍；Codex 出造型稿（主角长什么样的设定图）和关键帧（每个镜头里最要紧的那一张画面）；即梦（Seedance）或 Google Flow（Veo）把关键帧拍成几秒钟的镜头。你是委托人，定方向、看成片、决定发不发；技能会在要你登录、签声明、付钱或过验证码的地方停下来问你。
 
